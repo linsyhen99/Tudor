@@ -3,7 +3,7 @@ const NavBar = () => {
         <div className="flex flex-wrap">
             <div className="text-white h-20 w-1/2 bg-black px-8 py-4 text-lg">
                 <div className="flex flex-row gap-16 pt-2 text-white">
-                    <button className="font-medium text-red-500 text-3xl font-bold">
+                    <button className="font-medium text-purple-500 text-3xl font-bold">
                         Tudor
                     </button>
                     <div className="pt-2 font-light">
