@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
         <>
-            <div className="relative h-40 w-full">
+            <div className="relative h-40 w-full pt-8">
                 <div className="absolute inset-x-0 bottom-0 grid grid-cols-5 justify-right border-b-2">
-                    <div className="flex flex-col pt-2 pl-10">
+                    <div className="flex flex-col pt-15 pl-10">
                         <p className="text-lg font-bold pb-2">
                             LEGAL
                         </p>
@@ -20,7 +20,7 @@ const Footer = () => {
                             Intellectual Property
                         </p>
                     </div>
-                    <div className="">
+                    <div className="pt-15">
                         <p className="text-lg font-bold gap-10 pb-2">
                             CAREERS
                         </p>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </a>
                         </p>
                     </div>
-                    <div >
+                    <div className="pt-15">
                         <p className="text-lg font-bold gap-10 pb-2">
                             SOCIAL
                         </p>
@@ -54,7 +54,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="pt-15">
                         <p className="cursor-pointer text-md font-light gap-10 hover:text-purple-500 pb-1">
                             FAQ
                         </p>
