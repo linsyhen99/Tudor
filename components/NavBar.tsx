@@ -32,7 +32,7 @@ const NavBar = () => {
                         Tudor
                     </a>
                     <div className="flex flex-row gap-16 pt-2 font-light">
-                        <a href="/">
+                        <a href="/about">
                             About Us
                         </a>
                         <a href="/">
