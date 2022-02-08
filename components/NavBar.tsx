@@ -26,23 +26,25 @@ const NavBar = () => {
 
     return (
         <div className="flex flex-wrap">
-            <div className="text-white h-20 w-1/2 bg-black px-8 py-4 text-lg">
+            <div className="text-white h-20 w-1/2 bg-gray-900 px-8 py-4 text-lg">
                 <div className="flex flex-row gap-16 pt-2 text-white">
-                    <button className="font-medium text-purple-500 text-3xl font-bold">
+                    <a href="/" className="font-medium text-purple-500 text-3xl font-bold hover:text-purple-500">
                         Tudor
-                    </button>
-                    <div className="pt-2 font-light">
-                        About Us
-                    </div>
-                    <div className="pt-2 font-light">
-                        Safety
-                    </div>
-                    <div className="pt-2 font-light">
-                        Team
+                    </a>
+                    <div className="flex flex-row gap-16 pt-2 font-light">
+                        <a href="/">
+                            About Us
+                        </a>
+                        <a href="/">
+                            Safety
+                        </a>
+                        <a href="/">
+                            Team
+                        </a>
                     </div>
                 </div>
             </div>
-            <div className="grid justify-items-end bg-black w-1/2 py-5 px-8">
+            <div className="grid justify-items-end bg-gray-900 w-1/2 py-5 px-8">
                 <button onClick={showModal} className="rounded-md font-medium text-lg bg-gray-200 text-red-700 px-8">
                     Log in
                 </button>
