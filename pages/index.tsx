@@ -24,10 +24,10 @@ const Home: NextPage = () => {
       <div className='w-full flex justify-center'>
         <div className='absolute py-80'>
           <div className='flex justify-center font-semibold text-8xl text-purple-400 pb-6'>
-            Swipe Right Tutor
+            Swipe Right Tutor™
           </div>
           <div className='flex justify-center'>
-            <button className='flex justify-center rounded-full bg-red-300 text-lg font-normal text-white px-6 py-2'>
+            <button className='flex justify-center rounded-full bg-red-300 text-lg font-normal text-white px-14 py-3'>
               CREATE ACCOUNT
             </button>
           </div>
@@ -49,6 +49,9 @@ const Home: NextPage = () => {
                 </div>
                 <div className='text-base font-extralight py-6'>
                   {review.review}
+                </div>
+                <div className='flex justify-end pb-4 text-base font-extralight'>
+                  Tutee: Ruwan
                 </div>
               </div>
             )
