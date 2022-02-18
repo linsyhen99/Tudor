@@ -3,6 +3,19 @@ import { Form, Input, Button, Checkbox, Modal } from 'antd'
 
 const NavBar = () => {
     const [isModalVisible, setIsModalVisible] = useState(false)
+    const [navBarItems, setNavBarItems] = useState([{
+        "name": "About Us",
+        "link": "/about"
+    },
+    {
+        "name": "Safety",
+        "link": "/",
+    },
+    {
+        "name": "Team",
+        "link": "/"
+    }
+    ])
 
     const showModal = () => {
         setIsModalVisible(true);
@@ -32,15 +45,13 @@ const NavBar = () => {
                         Tudor
                     </a>
                     <div className="flex flex-row gap-16 pt-2 font-light">
-                        <a href="/about">
-                            About Us
-                        </a>
-                        <a href="/">
-                            Safety
-                        </a>
-                        <a href="/">
-                            Team
-                        </a>
+                        {navBarItems.map((item, id) => {
+                            return (
+                                <a key={id} href={item.link}>
+                                    {item.name}
+                                </a>
+                            )
+                        })}
                     </div>
                 </div>
             </div>
