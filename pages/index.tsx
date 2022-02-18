@@ -35,12 +35,12 @@ const Home: NextPage = () => {
         <img src='https://tinder.com/static/build/4edddaa088aa0b1f49a8f7914549a6ea.webp' alt='students' className='w-full' height=""></img>
       </div>
       <div className='px-20'>
-        <div className='pt-10 pb-20 flex flex-row gap-4 text-5xl'>
+        <div className='pt-10 pb-20 flex flex-row gap-10 text-5xl'>
           {reviews.map((review, id) => {
             return (
               <div key={id} className='border rounded-md shadow text-red-800 px-6 py-4'>
                 <div className='flex flex-row justify-between'>
-                  <div className='border-b-2 font-bold text-xl pb-2 pr-40'>
+                  <div className='border-b-2 font-bold text-xl pb-2 pr-40 w-3/4'>
                     {review.name}
                   </div>
                   <div className='width-1/4'>
