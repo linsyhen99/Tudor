@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import { useState } from 'react'
+import ReviewCard from '../components/ReviewCard'
 
 const Home: NextPage = () => {
   const [reviews, setReviews] = useState(
@@ -35,28 +36,7 @@ const Home: NextPage = () => {
         <img src='https://tinder.com/static/build/4edddaa088aa0b1f49a8f7914549a6ea.webp' alt='students' className='w-full' height=""></img>
       </div>
       <div className='px-20'>
-        <div className='pt-10 pb-20 flex flex-row gap-10 text-5xl'>
-          {reviews.map((review, id) => {
-            return (
-              <div key={id} className='border rounded-md shadow text-red-800 px-6 py-4'>
-                <div className='flex flex-row justify-between'>
-                  <div className='border-b-2 font-bold text-xl pb-2 pr-40 w-3/4'>
-                    {review.name}
-                  </div>
-                  <div className='width-1/4'>
-                    <img src="https://img.icons8.com/officel/16/000000/quote-right.png" width={40} height={40} />
-                  </div>
-                </div>
-                <div className='text-base font-extralight py-6'>
-                  {review.review}
-                </div>
-                <div className='flex justify-end pb-4 text-base font-extralight'>
-                  Tutee: Ruwan
-                </div>
-              </div>
-            )
-          })}
-        </div>
+        <ReviewCard />
         <Footer />
         <div className='py-8 flex justify-center'>
           © 2022 Tudor Group, All Rights Reserved.
